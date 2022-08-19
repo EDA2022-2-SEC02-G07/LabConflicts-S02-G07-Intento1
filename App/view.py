@@ -93,7 +93,9 @@ def lastBook(control):
     """
     Devuelve el último libro cargado
     """
-    pass
+    last = controller.lastbook(control)
+
+    return last
 
 
 # Se crea el controlador asociado a la vista
@@ -114,7 +116,10 @@ while True:
         first = None
 
         # TODO: Modificaciones de Est-2 en el Lab 2
-        last = None
+        last = lastBook(control)
+        print("Ultimo libro cargado: /n" + str(last) + "/n")
+        
+
 
     elif int(inputs[0]) == 2:
         print("Cargando información de tags....")

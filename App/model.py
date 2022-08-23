@@ -75,7 +75,11 @@ def addBookTags(catalog, booktagsfile):
     Esta funcion guardar los booktags provenientes del archivo CSV.
     """
     # TODO: Modificaciones de Est-1 y Est-2, Est-3 en el Lab 2
-    pass
+    bt = lt.newList(dataestructure = "SINGLE_LINKED", filename = booktagsfile)
+
+    catalog ["book_tags"] = bt
+    return catalog
+    
 
 
 def addTag(catalog, tag):
